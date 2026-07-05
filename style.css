@@ -130,6 +130,8 @@ body{
 
     display:flex;
 
+    flex-direction:column;
+
     justify-content:center;
     align-items:center;
 
@@ -140,7 +142,7 @@ body{
 /* Profile Card */
 /* ============================= */
 
-.profile-card{
+.profile-card{margin-bottom:40px;
 
     width:100%;
 
@@ -169,7 +171,6 @@ body{
 
     animation:fadeUp 1s ease;
 }
-
 /* ============================= */
 /* Top Bar */
 /* ============================= */
@@ -1172,6 +1173,15 @@ body{
     env(safe-area-inset-right)
     env(safe-area-inset-bottom)
     env(safe-area-inset-left);
+}
+body{
+
+    overflow-x:hidden;
+}
+
+main{
+
+    width:100%;
 }
 
 /* ============================= */
