@@ -1,0 +1,60 @@
+{
+    "name":"Thanh",
+
+    "bio":"Designer • Photographer",
+
+    "instagram":"https://instagram.com/",
+
+    "facebook":"https://facebook.com/",
+
+    "tiktok":"https://tiktok.com/",
+
+    "locket":"https://locket.camera/",
+
+    "discord":"https://discord.com/",
+
+    "github":"https://github.com/",
+
+    "footer1":"Thank you for being here.",
+
+    "footer2":"See you again someday, beyond the screen.",
+
+    "secretMessage":"If you found this message, maybe we were meant to meet someday.",
+
+    "status":{
+
+        "morning":{
+
+            "icon":"☕",
+
+            "text":"Starting the day."
+
+        },
+
+        "afternoon":{
+
+            "icon":"💻",
+
+            "text":"Building something new."
+
+        },
+
+        "evening":{
+
+            "icon":"🎧",
+
+            "text":"Listening to music."
+
+        },
+
+        "night":{
+
+            "icon":"🌙",
+
+            "text":"See you tomorrow."
+
+        }
+
+    }
+
+}
