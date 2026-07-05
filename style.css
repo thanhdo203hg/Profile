@@ -313,3 +313,867 @@ body{
 
     line-height:1.6;
 }
+/* ============================= */
+/* Smart Status */
+/* ============================= */
+
+#smart-status{
+
+    margin-top:22px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    gap:12px;
+}
+
+/* Switch */
+
+#status-switch{
+
+    width:46px;
+    height:24px;
+
+    border-radius:999px;
+
+    background:
+    rgba(120,120,120,.35);
+
+    position:relative;
+
+    transition:.4s ease;
+}
+
+/* Online */
+
+#status-switch.active{
+
+    background:
+    linear-gradient(
+        90deg,
+        #00ff88,
+        #00d26a
+    );
+
+    box-shadow:
+    0 0 14px rgba(0,255,136,.35);
+}
+
+#status-dot{
+
+    width:18px;
+    height:18px;
+
+    background:white;
+
+    border-radius:50%;
+
+    position:absolute;
+
+    top:3px;
+    left:3px;
+
+    transition:.4s ease;
+}
+
+/* Active Dot */
+
+#status-switch.active #status-dot{
+
+    left:25px;
+}
+
+/* Status Text */
+
+#status-text{
+
+    font-size:14px;
+
+    font-weight:500;
+
+    background:
+    linear-gradient(
+        90deg,
+        #ffffff,
+        #c6a6ff,
+        #ffffff
+    );
+
+    background-size:200%;
+
+    -webkit-background-clip:text;
+
+    -webkit-text-fill-color:transparent;
+
+    animation:hologram 5s linear infinite;
+}
+
+/* ============================= */
+/* Social */
+/* ============================= */
+
+.socials{
+
+    margin-top:28px;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    gap:14px;
+
+    flex-wrap:wrap;
+}
+
+.social-btn{
+
+    width:48px;
+    height:48px;
+
+    display:flex;
+
+    justify-content:center;
+    align-items:center;
+
+    border-radius:16px;
+
+    text-decoration:none;
+
+    color:white;
+
+    font-size:18px;
+
+    background:
+    rgba(255,255,255,.05);
+
+    border:
+    1px solid rgba(255,255,255,.08);
+
+    backdrop-filter:blur(12px);
+
+    transition:.35s ease;
+}
+
+.social-btn:hover{
+
+    transform:
+    translateY(-5px);
+
+    background:
+    rgba(179,136,255,.18);
+
+    border:
+    1px solid rgba(179,136,255,.3);
+
+    box-shadow:
+    0 0 24px rgba(179,136,255,.22);
+}
+
+/* ============================= */
+/* Gallery Button */
+/* ============================= */
+
+#gallery-button{
+
+    margin-top:30px;
+
+    display:inline-flex;
+
+    justify-content:center;
+    align-items:center;
+
+    width:100%;
+
+    height:54px;
+
+    border-radius:18px;
+
+    text-decoration:none;
+
+    color:white;
+
+    font-weight:600;
+
+    letter-spacing:.5px;
+
+    background:
+    linear-gradient(
+        135deg,
+        rgba(179,136,255,.22),
+        rgba(255,255,255,.08)
+    );
+
+    border:
+    1px solid rgba(255,255,255,.08);
+
+    backdrop-filter:blur(12px);
+
+    transition:.4s ease;
+}
+
+#gallery-button:hover{
+
+    transform:
+    translateY(-3px);
+
+    box-shadow:
+    0 0 24px rgba(179,136,255,.28);
+
+    background:
+    linear-gradient(
+        135deg,
+        rgba(179,136,255,.32),
+        rgba(255,255,255,.12)
+    );
+}
+
+/* ============================= */
+/* Music Button */
+/* ============================= */
+
+#music-button{
+
+    position:fixed;
+
+    bottom:26px;
+    right:26px;
+
+    width:56px;
+    height:56px;
+
+    border:none;
+
+    border-radius:50%;
+
+    background:
+    rgba(255,255,255,.08);
+
+    backdrop-filter:blur(14px);
+
+    color:white;
+
+    font-size:18px;
+
+    cursor:pointer;
+
+    z-index:100;
+
+    transition:.35s ease;
+}
+
+#music-button:hover{
+
+    transform:
+    scale(1.08);
+
+    background:
+    rgba(179,136,255,.22);
+
+    box-shadow:
+    0 0 24px rgba(179,136,255,.3);
+}
+
+/* ============================= */
+/* Back To Top */
+/* ============================= */
+
+#back-to-top{
+
+    position:fixed;
+
+    bottom:96px;
+    right:26px;
+
+    width:48px;
+    height:48px;
+
+    border:none;
+
+    border-radius:50%;
+
+    background:
+    rgba(255,255,255,.06);
+
+    backdrop-filter:blur(12px);
+
+    color:white;
+
+    cursor:pointer;
+
+    opacity:0;
+
+    pointer-events:none;
+
+    transition:.35s ease;
+}
+
+/* Show */
+
+#back-to-top.show{
+
+    opacity:1;
+
+    pointer-events:auto;
+}
+
+#back-to-top:hover{
+
+    transform:
+    translateY(-4px);
+
+    background:
+    rgba(179,136,255,.2);
+}
+/* ============================= */
+/* Footer */
+/* ============================= */
+
+#footer{
+
+    margin-top:34px;
+
+    text-align:center;
+}
+
+#footer-line1{
+
+    font-size:14px;
+
+    opacity:.88;
+
+    margin-bottom:6px;
+}
+
+#footer-line2{
+
+    font-size:13px;
+
+    opacity:.45;
+
+    line-height:1.6;
+}
+
+/* ============================= */
+/* Easter Egg */
+/* ============================= */
+
+#secret-popup{
+
+    position:fixed;
+
+    inset:0;
+
+    background:
+    rgba(0,0,0,.65);
+
+    backdrop-filter:blur(10px);
+
+    display:flex;
+
+    justify-content:center;
+    align-items:center;
+
+    opacity:0;
+
+    pointer-events:none;
+
+    transition:.4s ease;
+
+    z-index:999;
+}
+
+/* Show Popup */
+
+#secret-popup.show{
+
+    opacity:1;
+
+    pointer-events:auto;
+}
+
+.secret-card{
+
+    width:90%;
+
+    max-width:360px;
+
+    padding:28px;
+
+    border-radius:28px;
+
+    background:
+    rgba(255,255,255,.08);
+
+    border:
+    1px solid rgba(255,255,255,.08);
+
+    backdrop-filter:blur(18px);
+
+    text-align:center;
+
+    animation:fadeUp .5s ease;
+}
+
+#secret-title{
+
+    font-size:24px;
+
+    margin-bottom:12px;
+}
+
+#secret-message{
+
+    font-size:14px;
+
+    opacity:.75;
+
+    line-height:1.7;
+}
+
+#secret-close{
+
+    margin-top:22px;
+
+    border:none;
+
+    width:100%;
+    height:48px;
+
+    border-radius:16px;
+
+    background:
+    linear-gradient(
+        135deg,
+        rgba(179,136,255,.28),
+        rgba(255,255,255,.12)
+    );
+
+    color:white;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+    transition:.3s ease;
+}
+
+#secret-close:hover{
+
+    transform:
+    translateY(-2px);
+}
+
+/* ============================= */
+/* Scrollbar */
+/* ============================= */
+
+::-webkit-scrollbar{
+
+    width:8px;
+}
+
+::-webkit-scrollbar-track{
+
+    background:#090909;
+}
+
+::-webkit-scrollbar-thumb{
+
+    background:
+    linear-gradient(
+        to bottom,
+        #b388ff,
+        #ffffff
+    );
+
+    border-radius:999px;
+}
+
+/* ============================= */
+/* Cursor Glow */
+/* ============================= */
+
+.cursor-glow{
+
+    position:fixed;
+
+    width:26px;
+    height:26px;
+
+    border-radius:50%;
+
+    background:
+    radial-gradient(
+        circle,
+        rgba(179,136,255,.45),
+        transparent 70%
+    );
+
+    pointer-events:none;
+
+    transform:
+    translate(-50%,-50%);
+
+    z-index:9999;
+
+    mix-blend-mode:screen;
+}
+
+/* ============================= */
+/* Animations */
+/* ============================= */
+
+@keyframes hologram{
+
+    0%{
+
+        background-position:0%;
+    }
+
+    100%{
+
+        background-position:200%;
+    }
+}
+
+@keyframes fadeUp{
+
+    from{
+
+        opacity:0;
+
+        transform:
+        translateY(30px);
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:
+        translateY(0);
+    }
+}
+
+/* ============================= */
+/* Responsive */
+/* ============================= */
+
+@media(max-width:768px){
+
+    .profile-card{
+
+        padding:26px;
+    }
+
+    #profile-name{
+
+        font-size:36px;
+    }
+
+    .social-btn{
+
+        width:44px;
+        height:44px;
+
+        font-size:16px;
+    }
+
+    #gallery-button{
+
+        height:50px;
+    }
+
+    #music-button{
+
+        width:52px;
+        height:52px;
+    }
+
+}
+
+/* ============================= */
+/* Mobile */
+/* ============================= */
+
+@media(max-width:480px){
+
+    #app{
+
+        padding:18px;
+    }
+
+    .profile-card{
+
+        border-radius:28px;
+    }
+
+    #profile-name{
+
+        font-size:32px;
+    }
+
+    #profile-bio{
+
+        font-size:14px;
+    }
+
+    #status-text{
+
+        font-size:13px;
+    }
+
+    .socials{
+
+        gap:10px;
+    }
+
+}
+/* ============================= */
+/* Loading Hide */
+/* ============================= */
+
+#loading-screen.hide{
+
+    opacity:0;
+
+    visibility:hidden;
+}
+
+/* ============================= */
+/* Music Active */
+/* ============================= */
+
+#music-button.active{
+
+    background:
+    linear-gradient(
+        135deg,
+        rgba(179,136,255,.38),
+        rgba(255,255,255,.14)
+    );
+
+    box-shadow:
+    0 0 28px rgba(179,136,255,.35);
+}
+
+#music-button.active i{
+
+    animation:
+    musicPulse 2s ease infinite;
+}
+
+@keyframes musicPulse{
+
+    0%{
+
+        transform:scale(1);
+    }
+
+    50%{
+
+        transform:scale(1.18);
+    }
+
+    100%{
+
+        transform:scale(1);
+    }
+}
+
+/* ============================= */
+/* Glass Shimmer */
+/* ============================= */
+
+.profile-card::after{
+
+    content:"";
+
+    position:absolute;
+
+    inset:0;
+
+    background:
+    linear-gradient(
+        120deg,
+        transparent 20%,
+        rgba(255,255,255,.04),
+        transparent 80%
+    );
+
+    transform:
+    translateX(-120%);
+
+    animation:
+    shimmer 10s linear infinite;
+
+    pointer-events:none;
+}
+
+@keyframes shimmer{
+
+    100%{
+
+        transform:
+        translateX(120%);
+    }
+}
+
+/* ============================= */
+/* Scroll Reveal */
+/* ============================= */
+
+.reveal{
+
+    opacity:0;
+
+    transform:
+    translateY(35px);
+
+    transition:
+    1s ease;
+}
+
+.reveal.active{
+
+    opacity:1;
+
+    transform:
+    translateY(0);
+}
+
+/* ============================= */
+/* Hover Glow */
+/* ============================= */
+
+.social-btn::before,
+#gallery-button::before{
+
+    content:"";
+
+    position:absolute;
+
+    inset:0;
+
+    border-radius:inherit;
+
+    background:
+    radial-gradient(
+        circle at top,
+        rgba(255,255,255,.18),
+        transparent 70%
+    );
+
+    opacity:0;
+
+    transition:.4s ease;
+}
+
+.social-btn:hover::before,
+#gallery-button:hover::before{
+
+    opacity:1;
+}
+
+/* ============================= */
+/* Button Fix */
+/* ============================= */
+
+.social-btn,
+#gallery-button{
+
+    position:relative;
+
+    overflow:hidden;
+}
+
+/* ============================= */
+/* Noise Overlay */
+/* ============================= */
+
+body::before{
+
+    content:"";
+
+    position:fixed;
+
+    inset:0;
+
+    background-image:
+    url("https://grainy-gradients.vercel.app/noise.svg");
+
+    opacity:.03;
+
+    pointer-events:none;
+
+    z-index:9999;
+}
+
+/* ============================= */
+/* Smooth Fade */
+/* ============================= */
+
+.profile-card,
+.social-btn,
+#gallery-button,
+#music-button,
+#back-to-top,
+#secret-popup{
+
+    transition:
+    background .4s ease,
+    border .4s ease,
+    transform .35s ease,
+    opacity .4s ease,
+    box-shadow .4s ease;
+}
+
+/* ============================= */
+/* Mobile Touch */
+/* ============================= */
+
+@media(hover:none){
+
+    .social-btn:hover,
+    #gallery-button:hover,
+    #music-button:hover,
+    #back-to-top:hover{
+
+        transform:none;
+    }
+
+}
+
+/* ============================= */
+/* Prevent Highlight */
+/* ============================= */
+
+img,
+button,
+a{
+
+    -webkit-tap-highlight-color:
+    transparent;
+}
+
+/* ============================= */
+/* Safe Area */
+/* ============================= */
+
+body{
+
+    padding:
+    env(safe-area-inset-top)
+    env(safe-area-inset-right)
+    env(safe-area-inset-bottom)
+    env(safe-area-inset-left);
+}
+
+/* ============================= */
+/* End */
+/* ============================= */
