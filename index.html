@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <!--
+    =======================================
+            PROJECT THANH
+        Built to last.
+    =======================================
+    -->
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <title>Loading...</title>
+
+    <meta
+        name="description"
+        content="Personal Website">
+
+    <meta
+        name="theme-color"
+        content="#09090B">
+
+    <!-- Favicon -->
+
+    <link
+        rel="icon"
+        href="avatar.jpg">
+
+    <!-- Google Font -->
+
+    <link
+        rel="preconnect"
+        href="https://fonts.googleapis.com">
+
+    <link
+        rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <!-- CSS -->
+
+    <link
+        rel="stylesheet"
+        href="style.css">
+
+</head>
+
+<body>
+
+<!-- ============================= -->
+<!-- 01. Loading Screen -->
+<!-- ============================= -->
+
+<div id="loading-screen">
+
+    <div class="loading-box">
+
+        <h1 id="loading-name">
+
+            Loading...
+
+        </h1>
+
+    </div>
+
+</div>
+
+<!-- ============================= -->
+<!-- 02. Background -->
+<!-- ============================= -->
+
+<video
+    id="background-video"
+    autoplay
+    muted
+    loop
+    playsinline>
+
+    <source
+        src="cover.mp4"
+        type="video/mp4">
+
+</video>
+
+<div id="background-overlay"></div>
+
+<!-- ============================= -->
+<!-- 03. Main -->
+<!-- ============================= -->
+
+<main id="app">
+
+    <section id="hero">
+
+        <!-- ============================= -->
+        <!-- 04. Profile Card -->
+        <!-- ============================= -->
+
+        <div class="profile-card">
+
+            <!-- Top Bar -->
+
+            <div class="card-top">
+
+                <!-- Time -->
+
+                <div class="local-time">
+
+                    <span id="time">
+
+                        21:41
+
+                    </span>
+
+                    <small>
+
+                        Vietnam
+
+                    </small>
+
+                </div>
+
+                <!-- Theme Icon -->
+
+                <div id="time-icon">
+
+                    🌙
+
+                </div>
+
+            </div>
+
+            <!-- Greeting -->
+
+            <span id="greeting">
+
+                Good Evening 🌙
+
+            </span>
+
+            <!-- Avatar -->
+
+            <div class="avatar-wrapper">
+
+                <img
+                    id="avatar"
+                    src="avatar.jpg"
+                    alt="Avatar">
+
+            </div>
+
+            <!-- Name -->
+
+            <h1 id="profile-name"></h1>
+
+            <!-- Bio -->
+
+            <p id="profile-bio"></p>
+
+            <!-- ============================= -->
+            <!-- 05. Smart Status -->
+            <!-- ============================= -->
+
+            <div id="smart-status">
+
+                <!-- Switch -->
+
+                <div id="status-switch">
+
+                    <div id="status-dot"></div>
+
+                </div>
+
+                <!-- Text -->
+
+                <p id="status-text">
+
+                    🎧 Listening to music.
+
+                </p>
+
+            </div>
+
+            <!-- ============================= -->
+            <!-- 06. Social -->
+            <!-- ============================= -->
+
+            <div class="socials">
+
+                <a
+                    id="instagram"
+                    class="social-btn"
+                    href="#"
+                    target="_blank"
+                    aria-label="Instagram">
+
+                    <i class="fa-brands fa-instagram"></i>
+
+                </a>
+
+                <a
+                    id="facebook"
+                    class="social-btn"
+                    href="#"
+                    target="_blank"
+                    aria-label="Facebook">
+
+                    <i class="fa-brands fa-facebook-f"></i>
+
+                </a>
+
+                <a
+                    id="tiktok"
+                    class="social-btn"
+                    href="#"
+                    target="_blank"
+                    aria-label="TikTok">
+
+                    <i class="fa-brands fa-tiktok"></i>
+
+                </a>
+
+                <a
+                    id="locket"
+                    class="social-btn"
+                    href="#"
+                    target="_blank"
+                    aria-label="Locket">
+
+                    <i class="fa-solid fa-heart"></i>
+
+                </a>
+
+                <a
+                    id="discord"
+                    class="social-btn"
+                    href="#"
+                    target="_blank"
+                    aria-label="Discord">
+
+                    <i class="fa-brands fa-discord"></i>
+
+                </a>
+
+                <a
+                    id="github"
+                    class="social-btn"
+                    href="#"
+                    target="_blank"
+                    aria-label="GitHub">
+
+                    <i class="fa-brands fa-github"></i>
+
+                </a>
+
+            </div>
+
+            <!-- ============================= -->
+            <!-- 07. Gallery -->
+            <!-- ============================= -->
+
+            <a
+                id="gallery-button"
+                href="gallery.html">
+
+                Enter Gallery
+
+            </a>
+
+        </div>
+
+    </section>
+
+<!-- ============================= -->
+<!-- 08. Music Button -->
+<!-- ============================= -->
+
+<button
+    id="music-button"
+    aria-label="Music">
+
+    <i class="fa-solid fa-music"></i>
+
+</button>
+
+<!-- ============================= -->
+<!-- 09. Back To Top -->
+<!-- ============================= -->
+
+<button
+    id="back-to-top"
+    aria-label="Back To Top">
+
+    <i class="fa-solid fa-arrow-up"></i>
+
+</button>
+
+<!-- ============================= -->
+<!-- 10. Easter Egg -->
+<!-- ============================= -->
+
+<div id="secret-popup">
+
+    <div class="secret-card">
+
+        <h2 id="secret-title">
+
+            Hidden Message
+
+        </h2>
+
+        <p id="secret-message">
+
+            ...
+
+        </p>
+
+        <button id="secret-close">
+
+            Close
+
+        </button>
+
+    </div>
+
+</div>
+
+<!-- ============================= -->
+<!-- 11. Audio -->
+<!-- ============================= -->
+
+<audio
+    id="background-music"
+    loop>
+
+    <source
+        src="music.mp3"
+        type="audio/mpeg">
+
+</audio>
+
+<!-- ============================= -->
+<!-- 12. Footer -->
+<!-- ============================= -->
+
+<footer id="footer">
+
+    <p id="footer-line1"></p>
+
+    <p id="footer-line2"></p>
+
+</footer>
+
+</main>
+
+<!-- ============================= -->
+<!-- Javascript -->
+<!-- ============================= -->
+
+<script src="app.js"></script>
+
+</body>
+
+</html>
