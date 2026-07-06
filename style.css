@@ -860,7 +860,33 @@ body{
         translateY(0);
     }
 }
+@keyframes waterFlow{
 
+    0%{
+        transform:translate(-3%,-2%) scale(1);
+    }
+
+    50%{
+        transform:translate(3%,2%) scale(1.05);
+    }
+
+    100%{
+        transform:translate(-3%,-2%) scale(1);
+    }
+
+}
+
+@keyframes glassLight{
+
+    0%{
+        transform:translateX(-160%) rotate(28deg);
+    }
+
+    100%{
+        transform:translateX(250%) rotate(28deg);
+    }
+
+}
 /* ============================= */
 /* Responsive */
 /* ============================= */
@@ -869,8 +895,102 @@ body{
 
     .profile-card{
 
-        padding:26px;
-    }
+    position:relative;
+
+    overflow:hidden;
+
+    width:min(92%,460px);
+
+    padding:42px;
+
+    border-radius:34px;
+
+    background:rgba(18,18,22,.52);
+
+    backdrop-filter:blur(18px);
+    -webkit-backdrop-filter:blur(18px);
+
+    border:1px solid rgba(255,255,255,.08);
+
+    box-shadow:
+        0 25px 70px rgba(0,0,0,.45),
+        inset 0 1px 0 rgba(255,255,255,.08);
+
+    transition:.45s ease;
+
+}
+        .profile-card::before{
+
+    content:"";
+
+    position:absolute;
+
+    inset:-35%;
+
+    pointer-events:none;
+
+    background:
+
+        radial-gradient(circle at 18% 28%,
+        rgba(174,130,255,.16),
+        transparent 35%),
+
+        radial-gradient(circle at 78% 72%,
+        rgba(255,255,255,.08),
+        transparent 28%),
+
+        radial-gradient(circle at 65% 22%,
+        rgba(120,180,255,.10),
+        transparent 25%);
+
+    filter:blur(60px);
+
+    animation:waterFlow 18s ease-in-out infinite;
+
+}
+        .profile-card::after{
+
+    content:"";
+
+    position:absolute;
+
+    top:-120%;
+
+    left:-40%;
+
+    width:80%;
+
+    height:300%;
+
+    transform:rotate(28deg);
+
+    background:
+        linear-gradient(
+            transparent,
+            rgba(255,255,255,.06),
+            transparent
+        );
+
+    animation:glassLight 11s linear infinite;
+
+    pointer-events:none;
+
+}
+        .profile-card:hover{
+
+    transform:translateY(-8px);
+
+    border-color:rgba(185,150,255,.28);
+
+    box-shadow:
+
+        0 35px 90px rgba(0,0,0,.55),
+
+        0 0 35px rgba(150,120,255,.14),
+
+        inset 0 1px 0 rgba(255,255,255,.12);
+
+}
 
     #profile-name{
 
